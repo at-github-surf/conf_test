@@ -1,3 +1,48 @@
+
+# お問い合わせフォーム
+
+## 環境構築
+1.git clone git@github.com:coachtech-material/laravel-docker-template.git
+2.docker-compose up -d --build
+3.docker-compose exec php bash
+4.composer install
+5.php artisan key:generate
+6.php artisan migrate
+7.php artisan db:seed
+
+## 使用技術(実行環境)
+docker 3.8
+PHP 8.1.27
+Laravel Framework 8.83.8
+mysql 8.0.26
+
+## ER図
+< - - - 作成したER図の画像 - - - >
+未作成
+
+## URL
+開発環境：http://localhost/
+phpMyAdmin：http://localhost:8080/
+
+完成
+〇アカウント登録画面
+〇ログイン・ログオフ
+△管理画面（未完成：画面装飾およびログオフ時にアクセスしたときのルーティング）
+〇問い合わせフォーム
+△問い合わせ内容確認画面（未完成：キャンセル時の動作）
+〇問い合わせレコード登録
+
+未完成
+△：問い合わせテストデータ：カテゴリーの連動指定がよくわからず件数がおかしいです。
+×クライアント側画面：画面装飾
+×全画面：バリデーションチェック
+×管理画面：レコード詳細モーダル及び削除
+×管理画面：ページネーション
+×管理画面：検索機能
+×管理画面：csvエクスポート
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
@@ -62,3 +107,5 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
